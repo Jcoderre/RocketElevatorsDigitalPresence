@@ -1,0 +1,15 @@
+/************** CSS For Request a Form ***************/
+
+
+.container_form {
+    border-radius: 35px;
+    padding: 10px;
+    border: 5px solid rgb(158, 177, 182);
+    text-align: center;
+    height: 450px;
+    position: relative
+}
+
+.container_answer {
+    height : 325px
+}

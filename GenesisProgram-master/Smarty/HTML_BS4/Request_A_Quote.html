@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Request A Quote </title>
+		<link href="assets/images/custom/Icon_logo/RocketElevator_Icon.png" rel="icon" type="image/png" />
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+		<!-- Form CSS & JS -->
+		<link href="../HTML_BS4/form_sheet.js" rel="stylesheet" type="text/js" />
+		<link href="form_style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation grain-blue ">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix  translucent">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile " data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="../HTML_BS4/assets/images/custom/R2.png" alt="Rocket Elevator Logo" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark ">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="#home">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- PORTFOLIO -->
+										<a href="#work">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="#news">
+											NEWS
+										</a>
+									</li>
+									
+									<li><!-- CLIENTS -->
+										<a href="#clients">
+											CLIENTS
+										</a>
+									</li>
+									
+									<li><!-- CONTACT -->
+										<a href="#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+			<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+			<section class="page-header pb-0">
+				<div class="container">
+
+					<h1>REQUEST A QUOTE</h1>
+
+					<!-- breadcrumbs -->
+					<ol class="breadcrumb text-black">
+						<li><a href="index-Rocket_Elevator.html" style="color:rgb(124, 124, 124)">Home</a></li>
+						<li><a href="RE_Service_Residential_Building.html" style="color:rgb(124, 124, 124)">Residential</a></li>
+						<li><a href="RE_Service_Corporate_Bulding.html" style="color:rgb(124, 124, 124)">Corporate</a></li>
+						<li class="active">Request a quote</li>					
+					</ol><!-- /breadcrumbs -->
+
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->
+
+			<!-- -->
+
+			<section class="pt-50 pb-55">
+				<div class="container">
+					
+					<!-- FORM -->
+					<div>
+							<div>
+
+							<h3 class="text-center"><em>REQUEST A QUOTE FORM</em></h3>
+								
+								<!--
+									MESSAGES
+									
+										How it works?
+										The form data is posted to php/contact.php where the fields are verified!
+										php.contact.php will redirect back here and will add a hash to the end of the URL:
+											#alert_success 		= email sent
+											#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
+											#alert_mandatory	= email not sent - required fields empty
+											Hashes are handled by assets/js/contact.js
+
+										Form data: required to be an array. Example:
+											contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
+											Also, add `required` to input fields if is a mandatory field. 
+											Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
+
+										PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
+													ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
+
+										WARNING! Do not change the `email` and `name`!
+													contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+													contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
+								-->
+
+								<form id="requestQuote" >
+									<div class="row col-sm-10">
+										<div class="container_form col-md-9 pl-20">
+											<div class="row">
+												<label class="col-md-4 col-sm-4 pt-10 pr-10" for="buildingType">Building Type :</label>
+												<select name="building" id="buildingType" class="col-md-4 col-sm-4 ">
+													<optgroup label="Building Type">
+														<option value="Residential">Residential</option>
+														<option value="Commercial">Commercial</option>
+														<option value="Corporate">Corporate</option>
+														<option value="Hybrid">Hybrid</option>
+													</optgroup>
+												</select>
+												<div class="col-md-4 col-sm-4" id="selectedBuildType">dccccccccccc</div>									
+											</div>
+											<hr class="mt-5 mb-20" />
+											<div>
+												<label class="pt-5 pb-20" for="buildingType">For Apartement :</label>
+												<div class="row">	
+													<input class="col-md-3.5 m-7" type="text"  name="AptNb" placeholder="Nb of apartement" >
+													<input class="col-md-3.5 m-7" type="text"  name="FloorNb" placeholder="Nb of Floors" >
+													<input class="col-md-3.5 m-7" type="text"  name="AptBasementNb" placeholder="Nb of Basements" >									
+												</div>
+											</div>
+											<div>
+												<label class="pt-5 pb-20" for="buildingType">For Commercial :</label>
+												<div class="row">	
+													<input class="col-md-4 m-3" type="text"  name="BusinessNb" placeholder="Nb of Distinct Businesses" >
+													<input class="col-md-3 m-3" type="text"  name="FloorNb" placeholder="Nb of Floors" >
+													<input class="col-md-4 m-3" type="text"  name="ComBasementNb" placeholder="Nb of Basements" > 																																			
+												</div>
+												<div class="row">
+													<input class="col-md-5 m-10" type="text"  name="ComParkNb" placeholder="Nb of Parking Space">
+													<input class="col-md-5 m-10" type="text"  name="CageElevatorNb" placeholder="Nb of Elevator Cage" >
+												</div>
+											</div>
+										</div>
+										<div class="container_form col-md-3">
+											<div class="container_answer" >
+												<div id="buildingType_answer">
+													Building Type Answer <br><br>
+												</div>
+												<div>
+													Apartement selected Answer <br><br>
+												</div>
+											</div>
+											<div >
+												<hr class="mt-20 mb-25" />
+												<input type="submit" class="btn btn-outline-success" value="Submit">
+												<input  type="submit" class="btn btn-outline-danger" value="Reset">
+											</div>
+										</div>
+									</div>
+								</form>
+								<!-- /FORM -->
+
+								<hr class="mt-50 mb-50" />
+
+								<div class="row">
+
+									<!-- left - address -->
+									<div class="col-md-4 col-sm-4">
+
+										<p>
+											<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 725 boulevard Lebourgneuf <br /> Québec, Canada <br /> G2J 0C4</span>
+											<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:581-701-0303">581-701-0303</a></span>
+											<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="info@codeboxx.biz">info@codeboxx.biz</a></span>
+										</p>
+
+									</div>
+
+									<!-- right - program -->
+									<div class="col-md-4 col-sm-4">
+
+										<p>
+											<span class="block"><strong>Monday - Friday:</strong> 8am to 5pm</span>
+											<span class="block"><strong>Saturday &AMP; Sunday:</strong> 9am to 5pm</span>
+										</p>
+										
+									</div>
+									<!-- Social Icons -->
+									<div class="mt-30 text-center col-md-4 col-sm-4">
+										<a target="blank" href="https://www.facebook.com/sharer/sharer.php?u=http://codeboxx.biz/campus"  class="social-icon social-icon-border social-facebook " data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+																												<i class="icon-facebook"></i>
+																												<i class="icon-facebook"></i>
+										</a>
+
+										<a target="blank" href="https://twitter.com/share?url=http://codeboxx.biz/campus"  class="social-icon social-icon-border social-twitter " data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+																					<i class="icon-twitter"></i>
+																					<i class="icon-twitter"></i>
+										</a>
+
+										<a target="blank" href="https://www.instagram.com/codeboxxschool"  class="social-icon social-icon-border social-instagram " data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+																					<i class="icon-instagram"></i>
+																					<i class="icon-instagram"></i>
+										</a>
+
+										<a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://codeboxx.biz/campus/&amp;title=&amp;summary=&amp;source=" class="social-icon social-icon-border social-linkedin " data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+																					<i class="icon-linkedin"></i>
+																					<i class="icon-linkedin"></i>
+										</a>
+									</div>
+									<!-- /Social Icons -->
+
+								</div>
+
+							</div>
+							
+					</div>
+				</div>
+			</section>
+			<!-- / -->
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								We have earned our reputation as a company that manages a complete inspection process. All of our inspectors have extensive field experience as well as a thorough knowledge of code. Our office staff is friendly and always willing to answer any of your questions.
+							</p>
+							<h2>(581) 701-0303</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success btn-3d" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						&copy; All Rights Reserved, Rocket Elevator <sup>LTD</sup>
+					</div>
+				</div>
+
+			</footer>			
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+		-->
+		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+		<script src="assets/plugins/gmaps.js"></script>
+		<script>
+
+			jQuery(document).ready(function(){
+
+				/**
+					@BASIC GOOGLE MAP
+				**/
+				var map2 = new GMaps({
+					div: '#map2',
+					lat: -12.043333,
+					lng: -77.028333,
+					scrollwheel: false
+				});
+
+				var marker = map2.addMarker({
+					lat: -12.043333,
+					lng: -77.028333,
+					title: 'Company, Inc.'
+				});
+
+			});
+
+		</script>
+	</body>
+</html>

@@ -6861,7 +6861,7 @@ section#slider:not(.custom-form) .btn-default {
 	.nivo-prevNav:hover,
 	.swiper-button-next:hover,
 	.swiper-button-prev:hover {
-		color:#fff;
+		color:#fff
 		background-color:rgba(0,0,0,0.5);
 	}
 
