@@ -25,9 +25,9 @@
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
 
-		<!-- Form CSS & JS -->
-		<link href="../HTML_BS4/form_sheet.js" rel="stylesheet" type="text/js" />
-		<link href="form_style.css" rel="stylesheet" type="text/css" />
+		
+		<!--Form CSS-->
+		<link href="form_styleSheet.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<!--
@@ -199,91 +199,135 @@
 					
 					<!-- FORM -->
 					<div>
-							<div>
-
-							<h3 class="text-center"><em>REQUEST A QUOTE FORM</em></h3>
-								
-								<!--
-									MESSAGES
-									
-										How it works?
-										The form data is posted to php/contact.php where the fields are verified!
-										php.contact.php will redirect back here and will add a hash to the end of the URL:
-											#alert_success 		= email sent
-											#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
-											#alert_mandatory	= email not sent - required fields empty
-											Hashes are handled by assets/js/contact.js
-
-										Form data: required to be an array. Example:
-											contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
-											Also, add `required` to input fields if is a mandatory field. 
-											Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
-
-										PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
-													ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
-
-										WARNING! Do not change the `email` and `name`!
-													contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-													contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-								-->
-
-								<form id="requestQuote" >
-									<div class="row col-sm-10">
-										<div class="container_form col-md-9 pl-20">
+						<div>							
+								<h3 class="text-center"><em>REQUEST A QUOTE FORM</em></h3>
+								<form id="requestQuote" >									
+									<div class="row col-sm-10 ">									
+										<div id="form-selected" class="container_form col-md-7 pl-20">
+											
+											<h4>Choose your building type project:</h4>
+											<hr class="mt-5 mb-5" />
 											<div class="row">
-												<label class="col-md-4 col-sm-4 pt-10 pr-10" for="buildingType">Building Type :</label>
-												<select name="building" id="buildingType" class="col-md-4 col-sm-4 ">
-													<optgroup label="Building Type">
-														<option value="Residential">Residential</option>
-														<option value="Commercial">Commercial</option>
-														<option value="Corporate">Corporate</option>
-														<option value="Hybrid">Hybrid</option>
-													</optgroup>
-												</select>
-												<div class="col-md-4 col-sm-4" id="selectedBuildType">dccccccccccc</div>									
-											</div>
-											<hr class="mt-5 mb-20" />
-											<div>
-												<label class="pt-5 pb-20" for="buildingType">For Apartement :</label>
-												<div class="row">	
-													<input class="col-md-3.5 m-7" type="text"  name="AptNb" placeholder="Nb of apartement" >
-													<input class="col-md-3.5 m-7" type="text"  name="FloorNb" placeholder="Nb of Floors" >
-													<input class="col-md-3.5 m-7" type="text"  name="AptBasementNb" placeholder="Nb of Basements" >									
+													<div class="col-md-3" >
+														<label class="pt-5 pb-20" for="AptCheckBox">Apartement</label>
+														<input class="mt-12 ml-10" type="radio" id="AptCheckBox" name="optBox" value="AptOpt" onclick="myFunction()">
+													</div>	
+													<div class="col-md-3">
+														<label class="pt-5 pb-20" for="ComCheckBox">Commercial</label>
+														<input class="mt-12 ml-10" type="radio" id="ComCheckBox"  name="optBox" value="ComOpt" onclick="myFunction()">
+													</div>
+													<div class="col-md-3">
+														<label class="pt-5 pb-20" for="CorpCheckBox">Corporate</label>
+														<input class="mt-12 ml-10" type="radio" id="CorpCheckBox" name="optBox" value="CorpOpt" onclick="myFunction()">
+													</div>
+													<div class="col-md-3">
+														<label class="pt-5 pb-20" for="HybCheckBox">Hybride</label>
+														<input class="mt-12 ml-10" type="radio" id="HybCheckBox"  name="optBox" value="HybOpt" onclick="myFunction()">
+													</div>												
+											</div>											
+											<hr class="mt-5 mb-10" />
+											<h4>Indicate the number for each item : </h4>
+											<div>												
+												<div class="row" id="AptForm" style="display:none" >	
+														<input class="col-md-4 m-3" type="number" min="0" name="AptNb" placeholder="Apartement" oninput="this.value = Math.abs(this.value)" >
+														<input class="col-md-3 m-3" type="number" min="0" name="FloorNb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-4 m-3" type="number" min="0" name="AptBasementNb" placeholder="Basements" oninput="this.value = Math.abs(this.value)">									
 												</div>
 											</div>
-											<div>
-												<label class="pt-5 pb-20" for="buildingType">For Commercial :</label>
-												<div class="row">	
-													<input class="col-md-4 m-3" type="text"  name="BusinessNb" placeholder="Nb of Distinct Businesses" >
-													<input class="col-md-3 m-3" type="text"  name="FloorNb" placeholder="Nb of Floors" >
-													<input class="col-md-4 m-3" type="text"  name="ComBasementNb" placeholder="Nb of Basements" > 																																			
+											<div>													
+												<div id="ComForm" style="display:none">
+													<div class="row" >	
+														<input class="col-md-4 m-3" type="number" min="0" name="BusinessNb" placeholder="Businesses" oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-3 m-3" type="number" min="0" name="FloorComNb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-4 m-3" type="number" min="0" name="ComBasementNb" placeholder="Basements" oninput="this.value = Math.abs(this.value)"> 																																			
+													</div>
+													<div class="row">
+														<input class="col-md-5 m-7  " type="number" min="0" name="ComParkNb" placeholder="Parking Space" oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-5 m-7" type="number" min="0" name="CageComElevatorNb" placeholder="Elevator Cage" oninput="this.value = Math.abs(this.value)">
+													</div>
+												</div>	
 												</div>
-												<div class="row">
-													<input class="col-md-5 m-10" type="text"  name="ComParkNb" placeholder="Nb of Parking Space">
-													<input class="col-md-5 m-10" type="text"  name="CageElevatorNb" placeholder="Nb of Elevator Cage" >
+												<div>													
+													<div id="CorpForm" style="display:none">
+														<div class="row">	
+															<input class="col-md-4 m-3" type="number" min="0" name="sepTenantNb" placeholder="Separate tenant" oninput="this.value = Math.abs(this.value)">
+															<input class="col-md-3 m-3" type="number" min="0" name="FloorCorpNb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
+															<input class="col-md-4 m-3" type="number" min="0" name="CorpBasementNb" placeholder="Basements" oninput="this.value = Math.abs(this.value)"> 																																			
+														</div>
+														<div class="row">
+															<input class="col-md-4 m-10" type="number" min="0" name="CorpParkNb" placeholder="Parking " oninput="this.value = Math.abs(this.value)">
+															<input class="col-md-6 m-10" type="number" min="0" name="CageCorpElevatorNb" placeholder="Occupants per floor" oninput="this.value = Math.abs(this.value)">
+														</div>
+													</div>
+												</div>
+												<div>													
+													<div id="HybForm" style="display:none">
+														<div class="row">	
+															<input class="col-md-5 m-10" type="number" min="0" name="BusinessHybridNb" placeholder="Distinct Businesses" oninput="this.value = Math.abs(this.value)">
+															<input class="col-md-5 m-10" type="number" min="0" name="FloorHybridNb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">													 																																			
+														</div>
+														<div class="row">
+															<input class="col-md-5 m-10" type="number" min="0" name="HybBasementNb" placeholder="Basements" oninput="this.value = Math.abs(this.value)">
+															<input class="col-md-5 m-10" type="number" min="0" name="HybParkNb" placeholder="Parking Space" oninput="this.value = Math.abs(this.value)">
+														</div>
+														<div class="row">
+															<input class="col-md-5 m-10" type="number" min="0" name="OccByFloor" placeholder="Occupants by floor" oninput="this.value = Math.abs(this.value)">	
+															<input id="max24" class="col-md-5 m-10" type="number" min="0" max="24"  name="ActivHour" placeholder="Active Hour" oninput="this.value = Math.abs(this.value)"  >													
+														</div>
 												</div>
 											</div>
-										</div>
-										<div class="container_form col-md-3">
+											
+										</div>	
+																																																	
+										<div class="container_form_Answer col-md-4 ">
 											<div class="container_answer" >
-												<div id="buildingType_answer">
-													Building Type Answer <br><br>
+												<h4>RESULTS FOR :</h4>
+												<div id="buildingType_answer" class="center-text">
+													<p id="AptChoiceText" class="mb-10" style="Display:none"><strong><em>Apartement</em></strong></p>
+													<p id="ComChoiceText" class="mb-10" style="Display:none"><strong><em>Commercial</em></strong></p>
+													<p id="CorpChoiceText" class="mb-10" style="Display:none"><strong><em>Corporate</em></strong></p>
+													<p id="HybChoiceText" class="mb-10" style="Display:none"><strong><em>Hybrid</em></strong></p>
 												</div>
-												<div>
-													Apartement selected Answer <br><br>
-												</div>
+										        <hr class="mt-15 mb-15" />																		
 											</div>
+											<div class="container_elevator-need" id="nb-elevator-need">
+													<h4><em>ELEVATOR NEEDED :</em></h4>
+													<h2 id="elevator-needed"></h2>
+												</div>
 											<div >
 												<hr class="mt-20 mb-25" />
-												<input type="submit" class="btn btn-outline-success" value="Submit">
-												<input  type="submit" class="btn btn-outline-danger" value="Reset">
+												<div class="costPrice">
+													<h4><em>ESTIMATED COST :</em></h4>
+													<h2 id="cost-result"></h2>
+												</div>
+											</div>											
+										</div>										
+									</div>
+									<div id="product-line-cost" class="container_form_extra_fee ">
+										<h4>Choose your elevator product line :</h4>
+										<div class="row">
+											<div class="col-md-4">
+												<input class="m-5" type="radio" id="Std_Check" name="OptCheck" value="8321.5">
+												<label for="Std_Check">Standard (7 565$) <br /> each </label><br>
 											</div>
+											<div class="col-md-4">
+												<input class="m-5" type="radio" id="Prem_Check" name="OptCheck" value="13949.85">
+												<label for="Prem_Check">Premium (12 345$) <br /> each </label><br>  
+											</div>
+											<div class="col-md-4">
+												<input class="m-5" type="radio" id="Exc_Check" name="OptCheck" value="17864">
+												<label for="Exc_Check">Excelium (15 400$) <br /> each </label><br><br>
+											</div>
+											The installation fee varies for each product line (10% for the standard, 13% for the Premium and 16% for the Excelium) !
 										</div>
 									</div>
 								</form>
 								<!-- /FORM -->
 
 								<hr class="mt-50 mb-50" />
+
+
+			
 
 								<div class="row">
 
@@ -333,13 +377,47 @@
 
 								</div>
 
-							</div>
-							
+
+
+						</div>							
 					</div>
 				</div>
 			</section>
 			<!-- / -->
+			<!-- PARALLAX -->
+			<section class="parallax parallax-2" style="background-image: url('assets/images/custom/Service_Corporate/Background/BckGrnd_Serv_Corp.jpg');">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
 
+				<div class="container countTo-sm text-center ">
+					<div class="row">
+						<div class="col-6 col-sm-3">
+							<i class="fa fa-users fs-65"></i> &nbsp; 
+							<span class="countTo" data-speed="10000" style="color:#00c3ff">7652</span>
+							<h6>HAPPY CLIENTS</h6>
+						</div>
+
+						<div class="col-6 col-sm-3">
+							<i class="fa fa-briefcase fs-65"></i> &nbsp; 
+							<span class="countTo" data-speed="10000" style="color:#00c3ff">56000</span>
+							<h6>FINISHED PROJECTS</h6>
+						</div>
+
+						<div class="col-6 col-sm-3">
+							<i class="fa fa-twitter fs-65"></i> &nbsp; 
+							<span class="countTo" data-speed="10000" style="color:#00c3ff">7234</span>
+							<h6>TWITTER FOLLOWERS</h6>
+						</div>
+
+						<div class="col-6 col-sm-3">
+							<i class="fa fa-facebook fs-65"></i> &nbsp; 
+							<span class="countTo" data-speed="10000" style="color:#00c3ff">8597</span>
+							<h6>FACEBOOK FOLLOWERS</h6>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- /PARALLAX -->
 
 			<!-- FOOTER -->
 			<footer id="footer">
@@ -418,6 +496,7 @@
 		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 
 		<script src="assets/js/scripts.js"></script>
+		<script src="form_sheet.js"></script>
 		
 
 		<!-- PAGELEVEL SCRIPTS -->
