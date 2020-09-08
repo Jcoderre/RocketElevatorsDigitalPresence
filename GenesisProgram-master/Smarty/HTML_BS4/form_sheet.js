@@ -46,21 +46,35 @@ function myFunction(){
     }
 
 }   
-
-
+/*
 $("#product-line-cost").change(function(event){
     event.preventDefault();
     var $input = $(this).find("input[type='radio']:checked");
     var input = $input.val();
     $("#cost-result").text(input);
-    console.log(input);
 })
-
-
-
+*/
 $("#max24").keyup(function() {
     if ($(this).val() > 24){
         $(this).val(24);
     } 
 })
+
+$("#CageComElevatorNb").on("change keyup", function(){
+    var input = $(this).val();
+    $("#elevator-needed").text(input);
+})
+
+
+$("#requestQuote").on("change", function(){
+    var $x = $(this).find("[name=CageComElevatorNb]");
+    var x = $x.val();
+    var $y = $(this).find('#product-line-cost', 'input[type="radio"]:checked');
+    var y = $y.val();
+    var total_Cost = x * y;
+    $("#cost-result").text(total_Cost);
+    console.log(total_Cost);
+
+})
+
 
