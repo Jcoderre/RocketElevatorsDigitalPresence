@@ -221,7 +221,7 @@
 														<input class="mt-12 ml-10" type="radio" id="CorpCheckBox" name="optBox" value="CorpOpt" onclick="myFunction()">
 													</div>
 													<div class="col-md-3">
-														<label class="pt-5 pb-20" for="HybCheckBox">Hybride</label>
+														<label class="pt-5 pb-20" for="HybCheckBox">Hybrid</label>
 														<input class="mt-12 ml-10" type="radio" id="HybCheckBox"  name="optBox" value="HybOpt" onclick="myFunction()">
 													</div>												
 											</div>											
@@ -251,27 +251,27 @@
 													<div id="CorpForm" style="display:none">
 														<div class="row">	
 															<input class="col-md-4 m-3" type="number" min="0" name="sepTenantNb" placeholder="Separate tenant" oninput="this.value = Math.abs(this.value)">
-															<input class="col-md-3 m-3" type="number" min="0" name="FloorCorpNb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
-															<input class="col-md-4 m-3" type="number" min="0" name="CorpBasementNb" placeholder="Basements" oninput="this.value = Math.abs(this.value)"> 																																			
+															<input class="col-md-3 m-3" type="number" min="0" name="NbFloor_Corp" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
+															<input class="col-md-4 m-3" type="number" min="0" name="NbBasement_corp" placeholder="Basements" oninput="this.value = Math.abs(this.value)"> 																																			
 														</div>
 														<div class="row">
 															<input class="col-md-4 m-10" type="number" min="0" name="CorpParkNb" placeholder="Parking " oninput="this.value = Math.abs(this.value)">
-															<input class="col-md-6 m-10" type="number" min="0" name="CageCorpElevatorNb" placeholder="Occupants per floor" oninput="this.value = Math.abs(this.value)">
+															<input class="col-md-6 m-10" type="number" min="0" name="OccByFloor_corp" placeholder="Occupants per floor" oninput="this.value = Math.abs(this.value)">
 														</div>
 													</div>
 												</div>
 												<div>													
-													<div id="HybForm" style="display:none">
+													<div  id="HybForm" style="display:none">
 														<div class="row">	
 															<input class="col-md-5 m-10" type="number" min="0" name="BusinessHybridNb" placeholder="Distinct Businesses" oninput="this.value = Math.abs(this.value)">
-															<input class="col-md-5 m-10" type="number" min="0" name="FloorHybridNb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">													 																																			
+															<input class="col-md-5 m-10" type="number" min="0" name="NbFloor_Hyb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">													 																																			
 														</div>
 														<div class="row">
-															<input class="col-md-5 m-10" type="number" min="0" name="HybBasementNb" placeholder="Basements" oninput="this.value = Math.abs(this.value)">
+															<input class="col-md-5 m-10" type="number" min="0" name="NbBasement_Hyb" placeholder="Basements" oninput="this.value = Math.abs(this.value)">
 															<input class="col-md-5 m-10" type="number" min="0" name="HybParkNb" placeholder="Parking Space" oninput="this.value = Math.abs(this.value)">
 														</div>
 														<div class="row">
-															<input class="col-md-5 m-10" type="number" min="0" name="OccByFloor" placeholder="Occupants by floor" oninput="this.value = Math.abs(this.value)">	
+															<input class="col-md-5 m-10" type="number" min="0" name="OccByFloor_hyb" placeholder="Occupants by floor" oninput="this.value = Math.abs(this.value)">	
 															<input id="max24" class="col-md-5 m-10" type="number" min="0" max="24"  name="ActivHour" placeholder="Active Hour (Max: 24h)" oninput="this.value = Math.abs(this.value)"  >													
 														</div>
 												</div>
