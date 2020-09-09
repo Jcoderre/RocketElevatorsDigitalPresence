@@ -52,13 +52,13 @@ function myFunction(){
 
 }  
 
-/*
+
 $("#product-line-cost").change(function(){
     var $input = $(this).find("input[type='radio']:checked");
     var input = $input.val();
     $("#cost-result").text(input);
 })
-*/
+
 
 /********** Lock Nb of hour that can be input by users ************/
 
@@ -69,24 +69,24 @@ $("#max24").keyup(function() {
 })
 
 
-var $prod_line = $(this).find("#elevator_result, input[name=OptCheck]:checked"); // scope the checked Production line needed
-var prod_line = $prod_line.val(); // set value
-
+    
     /********** Generate the estimated cost for Commercial use and Number of Elevator needed  **********/
-
-$("#ComForm").on("change keyup", function() {
+/*
+$("#ComForm. #product-line-cost").on("change keyup", function() {
     var $elevNum = $(this).find("[name=CageComElevatorNb]"); // Scope the Nb of elevator needed
     var elevNum = $elevNum.val();   // Set value
+    var $prod_line = $(this).find("#elevator_result, input[name=OptCheck]:checked"); // scope the checked Production line needed
+    var prod_line = $prod_line.val(); // set value
     var total_Cost = elevNum * prod_line; // multiply
 
     $("#cost-result").text(total_Cost);
     $("#elevator-needed").text(elevNum);
     console.log(prod_line);
     })
-
+*/
     /*********** Generate the estimate Cost For Corporative use and Number of Elevator needed  ************/
-
-$("#CorpForm").on("change keyup", function(){
+/*
+$("#CorpForm, #product-line-cost").on("change keyup", function(){
     var $occByFloor = $(this).find("[name=OccByFloor_corp]"); // Scope the Nb of Occupant By Floor
     var occByFloor = $occByFloor.val();   
     var $nbOfBasement = $(this).find("[name=NbBasement_corp]"); // Scope the Nb of Basement
@@ -104,13 +104,13 @@ $("#CorpForm").on("change keyup", function(){
 
     $("#elevator-needed").text(Math.ceil(totalColumn));
     $("#cost-result").text(Math.ceil(total_Cost));
-        
+    console.log();    
     })
-
+*/
     /*********** Generate the estimate Cost For Hybrid use and Number of Elevator needed  ************/
 
-$("#HybForm").on("change keyup", function(){
-    var $occByFloor = $(this).find("[name=OccByFloor_hyb]"); // Scope the Nb of Occupant By Floor
+$("#HybForm, #product-line-cost").on("change keyup", function(){
+    var $occByFloor = $(this).find("[name=OccByFloor_Hyb]"); // Scope the Nb of Occupant By Floor
     var occByFloor = $occByFloor.val();   
     var $nbOfBasement = $(this).find("[name=NbBasement_Hyb]"); // Scope the Nb of Basement
     var nbOfBasement = $nbOfBasement.val();   
@@ -120,27 +120,33 @@ $("#HybForm").on("change keyup", function(){
     var nbOfElevator = occByFloor / parseInt("1000", 10); 
     var nbOfColumn = nbOfStories / parseInt("20", 10);
     var nbOfElevByColumn = Math.ceil(nbOfElevator) / Math.ceil(nbOfColumn);
-    var totalColumn = Math.ceil(nbOfElevByColumn) * Math.ceil(nbOfColumn);
+    var totalElev = Math.ceil(nbOfElevByColumn) * Math.ceil(nbOfColumn);
     var $prod_line = $(this).find("#elevator_result, input[name=OptCheck]:checked"); // scope the checked Production line needed
     var prod_line = $prod_line.val(); // set value
-    var total_Cost = Math.ceil(totalColumn) * prod_line; // multiply
-    $("#elevator-needed").text(Math.ceil(totalColumn));
+    var total_Cost = Math.ceil(totalElev) * prod_line; // multiply
+
+    $("#elevator-needed").text(Math.ceil(totalElev));
     $("#cost-result").text(Math.ceil(total_Cost));
-    console.log(pnbOfFloor);
+    console.log(totalElev);
     })
 
     /************  Generate the estimate Cost for Residential and the number of Elevator needed*********/
-    
-$("#requestQuote").on('change keyup', function(){
+    /*
+$("#AptForm, #product-line-cost").on('change keyup', function(){
     var $NbOfApart = $(this).find("[name=NbDoor_res]");
     var NbOfApart = $NbOfApart.val();
-    var $NbOfFloor = $(this).find("[name=NbOfFloor]");
+    var $NbOfFloor = $(this).find("[name=NbFloor_res]");
     var NbOfFloor = $NbOfFloor.val();
     var AvrgDoor = +NbOfApart / +NbOfFloor;
-    var NbElev_res = AvrgDoor / parseInt("6", 10); // Num of elevator
+    var NbElev_res = Math.ceil(AvrgDoor) / parseInt("6", 10); // Num of elevator
     var NbColumn_res = NbOfFloor / parseInt("20", 10);
-    var NbRealElev_res = NbElev_res * NbColumn_res;
+    var NbRealElev_res = Math.ceil(NbElev_res) * Math.ceil(NbColumn_res);
+    var $prod_line = $(this).find("#elevator_result, input[name=OptCheck]:checked"); // scope the checked Production line needed
+    var prod_line = $prod_line.val(); // set value
+    var totalCost = NbRealElev_res * prod_line;
+
     $("#elevator-needed").text(Math.ceil(NbRealElev_res));
-    $("#cost-result").text(Math.ceil(total_Cost));
-    console.log(pnbOfFloor);
+    $("#cost-result").text(Math.ceil(totalCost));
+    console.log(totalCost);
 })
+*/
