@@ -209,7 +209,7 @@
 											<hr class="mt-5 mb-5" />
 											<div class="row">
 													<div class="col-md-3" >
-														<label class="pt-5 pb-20" for="AptCheckBox">Apartement</label>
+														<label class="pt-5 pb-20" for="AptCheckBox">Residential</label>
 														<input class="mt-12 ml-10" type="radio" id="AptCheckBox" name="optBox" value="AptOpt" onclick="myFunction()">
 													</div>	
 													<div class="col-md-3">
@@ -227,9 +227,9 @@
 											</div>											
 											<hr class="mt-5 mb-10" />
 											<h4>Indicate the number for each item : </h4>
-											<div>												
+											<div>											
 												<div class="row" id="AptForm" style="display:none" >	
-														<input class="col-md-4 m-3" type="number" min="0" name="NbDoor_res" placeholder="Apartement" oninput="this.value = Math.abs(this.value)" >
+														<input class="col-md-4 m-3" type="number" min="0" name="NbDoor_res" placeholder="Residential" oninput="this.value = Math.abs(this.value)" >
 														<input class="col-md-3 m-3" type="number" min="0" name="NbFloor_res" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
 														<input class="col-md-4 m-3" type="number" min="0" name="NbBasements_res" placeholder="Basements" oninput="this.value = Math.abs(this.value)">									
 												</div>
@@ -308,15 +308,15 @@
 										<div class="row">
 											<div class="col-md-4">
 												<input class="m-5" type="radio" class="elevator_Result" id="Std_Check" name="OptCheck" value="8321.5">
-												<label for="Std_Check">Standard (7 565$) <br /> each </label><br>
+												<label for="Std_Check">Standard (7 565$) <br /> <em>(Good Value)</em></label><br>
 											</div>
 											<div class="col-md-4">
 												<input class="m-5" type="radio" class="elevator_Result" id="Prem_Check" checked="checked" name="OptCheck" value="13949.85">
-												<label for="Prem_Check">Premium (12 345$) <br /> each </label><br>  
+												<label for="Prem_Check">Premium (12 345$) <br /> <em>(Most Popular)</em></label><br>  
 											</div>
 											<div class="col-md-4">
 												<input class="m-5" type="radio" class="elevator_Result" id="Exc_Check"  name="OptCheck" value="17864">
-												<label for="Exc_Check">Excelium (15 400$) <br /> each </label><br><br>
+												<label for="Exc_Check">Excelium (15 400$) <br /><em>(Award-winning   Service)</em>  </label><br><br>
 											</div>
 											The installation fee varies for each product line (10% for the standard, 13% for the Premium and 16% for the Excelium) !
 										</div>
