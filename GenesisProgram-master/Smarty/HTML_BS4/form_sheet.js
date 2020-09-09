@@ -128,7 +128,19 @@ $("#HybForm").on("change keyup", function(){
     $("#cost-result").text(Math.ceil(total_Cost));
     console.log(pnbOfFloor);
     })
+
+    /************  Generate the estimate Cost for Residential and the number of Elevator needed*********/
     
 $("#requestQuote").on('change keyup', function(){
-    var NbofApart = $(this).find;
+    var $NbOfApart = $(this).find("[name=NbDoor_res]");
+    var NbOfApart = $NbOfApart.val();
+    var $NbOfFloor = $(this).find("[name=NbOfFloor]");
+    var NbOfFloor = $NbOfFloor.val();
+    var AvrgDoor = +NbOfApart / +NbOfFloor;
+    var NbElev_res = AvrgDoor / parseInt("6", 10); // Num of elevator
+    var NbColumn_res = NbOfFloor / parseInt("20", 10);
+    var NbRealElev_res = NbElev_res * NbColumn_res;
+    $("#elevator-needed").text(Math.ceil(NbRealElev_res));
+    $("#cost-result").text(Math.ceil(total_Cost));
+    console.log(pnbOfFloor);
 })
