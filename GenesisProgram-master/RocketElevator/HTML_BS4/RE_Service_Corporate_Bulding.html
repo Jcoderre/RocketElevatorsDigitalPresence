@@ -78,7 +78,7 @@
 
 				Example Usage:  class="clearfix sticky header-sm transparent b-0"
 			-->
-			<div id="header" class="navbar-toggleable-md sticky header-md clearfix  translucent">
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix shadow-after-1 translucent">
 
 				<!-- TOP NAV -->
 				<header id="topNav">
@@ -90,7 +90,7 @@
 						</button>
 
 						<!-- Logo -->
-						<a class="logo float-left " href="index.html">
+						<a class="logo float-left scrollTo" href="#top">
 							<img src="../HTML_BS4/assets/images/custom/R2.png" alt="Rocket Elevator Logo" />
 						</a>
 
@@ -115,10 +115,19 @@
 											HOME
 										</a>
 									</li>
-									<li><!-- SERVICES -->
-										<a href="index.html#services">
-											SERVICES
-										</a>
+									<li class="dropdown">
+										<li class="active"><!-- SERVICES -->
+											<a class="dropdown-toggle" href="index.html#services">
+												SERVICES
+											</a>
+											<ul class="dropdown-menu">
+												<li class="dropdown">
+													<a class="dropdown-toggle" href="RE_Service_Residential_Building.html">RESIDENTIAL</a>
+													<a class="dropdown-toggle active" >CORPORATE</a>
+													<a class="dropdown-toggle" href="Request_A_Quote.html">REQUEST A QUOTE</a>
+												</li>
+											</ul>
+										</li>
 									</li>
 									<li><!-- PORTFOLIO -->
 										<a href="index.html#work">

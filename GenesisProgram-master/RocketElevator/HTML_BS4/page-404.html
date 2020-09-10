@@ -78,7 +78,7 @@
 
 				Example Usage:  class="clearfix sticky header-sm transparent b-0"
 			-->
-			<div id="header" class="navbar-toggleable-md sticky header-md clearfix  translucent">
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix shadow-after-1 translucent">
 
 				<!-- TOP NAV -->
 				<header id="topNav">
@@ -90,7 +90,7 @@
 						</button>
 
 						<!-- Logo -->
-						<a class="logo float-left " href="index.html">
+						<a class="logo float-left scrollTo" href="#top">
 							<img src="../HTML_BS4/assets/images/custom/R2.png" alt="Rocket Elevator Logo" />
 						</a>
 
@@ -110,15 +110,24 @@
 									Add .external for an external link!
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li ><!-- HOME -->
+									<li><!-- HOME -->
 										<a href="index.html">
 											HOME
 										</a>
 									</li>
-									<li><!-- SERVICES -->
-										<a href="index.html#services">
-											SERVICES
-										</a>
+									<li class="dropdown">
+										<li><!-- SERVICES -->
+											<a class="dropdown-toggle" href="index.html#services">
+												SERVICES
+											</a>
+											<ul class="dropdown-menu">
+												<li class="dropdown">
+													<a class="dropdown-toggle" href="RE_Service_Residential_Building.html">RESIDENTIAL</a>
+													<a class="dropdown-toggle" href="RE_Service_Corporate_Bulding.html">CORPORATE</a>
+													<a class="dropdown-toggle" href="Request_A_Quote.html">REQUEST A QUOTE</a>
+												</li>
+											</ul>
+										</li>
 									</li>
 									<li><!-- PORTFOLIO -->
 										<a href="index.html#work">
@@ -153,7 +162,7 @@
 
 			</div>
 
-			<section class="page-header page-header-xs dark pb-0">
+			<section class="page-header page-header-xs dark pb-100">
 				<div class="container">
 
 					<h1 class="text-dark">Page Not Found</h1>
@@ -163,7 +172,7 @@
 						<li><a href="index.html" style="color:rgb(124, 124, 124)">Home</a></li>
 						<li><a href="RE_Service_Residential_Building.html" style="color:rgb(124, 124, 124)">Residential</a></li>
 						<li><a href="RE_Service_Corporate_Bulding.html" style="color:rgb(124, 124, 124)">Corporate</a></li>
-						<li><a href="Request_A_Quote.html" style="color:rgb(124, 124, 124)">Request a quote</a></li>
+						<li ><a href="Request_A_Quote.html" style="color:rgb(124, 124, 124)">Request a quote</a></li>
 						<li class="active">Error 404</li>
 					</ol><!-- /breadcrumbs -->
 

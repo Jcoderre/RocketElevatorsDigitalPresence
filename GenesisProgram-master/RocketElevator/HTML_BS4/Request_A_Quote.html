@@ -82,7 +82,7 @@
 
 				Example Usage:  class="clearfix sticky header-sm transparent b-0"
 			-->
-			<div id="header" class="navbar-toggleable-md sticky header-md clearfix  translucent">
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix shadow-after-1 translucent">
 
 				<!-- TOP NAV -->
 				<header id="topNav">
@@ -94,7 +94,7 @@
 						</button>
 
 						<!-- Logo -->
-						<a class="logo float-left scrollTo" href="index.html">
+						<a class="logo float-left scrollTo" href="#top">
 							<img src="../HTML_BS4/assets/images/custom/R2.png" alt="Rocket Elevator Logo" />
 						</a>
 
@@ -114,15 +114,24 @@
 									Add .external for an external link!
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active"><!-- HOME -->
+									<li ><!-- HOME -->
 										<a href="index.html">
 											HOME
 										</a>
 									</li>
-									<li><!-- SERVICES -->
-										<a href="index.html#services">
-											SERVICES
-										</a>
+									<li class="dropdown">
+										<li><!-- SERVICES -->
+											<a class="dropdown-toggle active" href="index.html#services">
+												SERVICES
+											</a>
+											<ul class="dropdown-menu">
+												<li class="dropdown">
+													<a class="dropdown-toggle" href="RE_Service_Residential_Building.html">RESIDENTIAL</a>
+													<a class="dropdown-toggle" href="RE_Service_Corporate_Bulding.html">CORPORATE</a>
+													<a class="dropdown-toggle" >REQUEST A QUOTE</a>
+												</li>
+											</ul>
+										</li>
 									</li>
 									<li><!-- PORTFOLIO -->
 										<a href="index.html#work">
@@ -134,13 +143,13 @@
 											NEWS
 										</a>
 									</li>
-									
+									</li>
 									<li><!-- CLIENTS -->
 										<a href="index.html#clients">
 											CLIENTS
 										</a>
 									</li>
-									
+									</li>
 									<li><!-- CONTACT -->
 										<a href="index.html#contact">
 											CONTACT
@@ -229,7 +238,7 @@
 										<h4>Indicate the number for each item : </h4>
 										<div>											
 											<div class="row" id="AptForm" style="display:none" >	
-													<input class="col-md-4 m-3" type="number" min="0" name="NbDoor_res" placeholder="Residential" oninput="this.value = Math.abs(this.value)" >
+													<input class="col-md-4 m-3" type="number" min="0" name="NbDoor_res" placeholder="Appartement" oninput="this.value = Math.abs(this.value)" >
 													<input class="col-md-3 m-3" type="number" min="0" name="NbFloor_res" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
 													<input class="col-md-4 m-3" type="number" min="0" name="NbBasements_res" placeholder="Basements" oninput="this.value = Math.abs(this.value)">									
 											</div>
