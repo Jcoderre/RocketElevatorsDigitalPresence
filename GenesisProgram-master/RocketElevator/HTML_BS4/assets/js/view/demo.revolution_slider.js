@@ -214,7 +214,7 @@ jQuery(document).ready(function() {
 
 		revapi = jQuery('.fullwidthbanner').revolution({
 			dottedOverlay:"none",
-			delay:7000,
+			delay:6500,
 			startwidth:1170,
 			startheight:400,
 			hideThumbs:200,
@@ -271,8 +271,7 @@ jQuery(document).ready(function() {
 			fullScreenOffsetContainer: ""
 		});
 
-		// Used by styleswitcher only - delete this on production!
-		jQuery("#is_wide, #is_boxed").bind("click", function() { revapi.revredraw(); });
+		
 
 	}
 
