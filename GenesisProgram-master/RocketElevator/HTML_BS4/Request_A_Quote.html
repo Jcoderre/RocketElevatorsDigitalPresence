@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Request A Quote </title>
+		<link href="assets/images/custom/Icon_logo/RocketElevator_Icon.png" rel="icon" type="image/png" />
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+		
+		<!--Form CSS-->
+		<link href="form_styleSheet.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation grain-blue ">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix  translucent">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile " data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="index.html">
+							<img src="../HTML_BS4/assets/images/custom/R2.png" alt="Rocket Elevator Logo" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark ">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="index.html">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="index.html#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- PORTFOLIO -->
+										<a href="index.html#work">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="index.html#news">
+											NEWS
+										</a>
+									</li>
+									
+									<li><!-- CLIENTS -->
+										<a href="index.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									
+									<li><!-- CONTACT -->
+										<a href="index.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+			<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+			<section class="page-header pb-0">
+				<div class="container">
+
+					<h1>REQUEST A QUOTE</h1>
+
+					<!-- breadcrumbs -->
+					<ol class="breadcrumb text-black">
+						<li><a href="index-Rocket_Elevator.html" style="color:rgb(124, 124, 124)">Home</a></li>
+						<li><a href="RE_Service_Residential_Building.html" style="color:rgb(124, 124, 124)">Residential</a></li>
+						<li><a href="RE_Service_Corporate_Bulding.html" style="color:rgb(124, 124, 124)">Corporate</a></li>
+						<li class="active">Request a quote</li>					
+					</ol><!-- /breadcrumbs -->
+
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->
+
+			<!-- -->
+
+			<section class="pt-50 pb-55">
+				<div class="container">
+					
+					<!-- FORM -->
+					<div>
+						<div>							
+							<h3 class="text-center"><em>REQUEST A QUOTE FORM</em></h3>
+							<form id="requestQuote" >									
+								<div class="row col-sm-10 ">									
+									<div id="form-selected" class="container_form col-md-7 pl-20">
+										
+										<h4>Choose your building type project:</h4>
+										<hr class="mt-5 mb-5" />
+										<div class="row">
+												<div class="col-md-3" >
+													<label class="pt-5 pb-20" for="AptCheckBox">Residential</label>
+													<input class="mt-12 ml-10" type="radio" id="AptCheckBox" name="optBox" value="AptOpt" onclick="myFunction()">
+												</div>	
+												<div class="col-md-3">
+													<label class="pt-5 pb-20" for="ComCheckBox">Commercial</label>
+													<input class="mt-12 ml-10" type="radio" id="ComCheckBox"  name="optBox" value="ComOpt" onclick="myFunction()">
+												</div>
+												<div class="col-md-3">
+													<label class="pt-5 pb-20" for="CorpCheckBox">Corporate</label>
+													<input class="mt-12 ml-10" type="radio" id="CorpCheckBox" name="optBox" value="CorpOpt" onclick="myFunction()">
+												</div>
+												<div class="col-md-3">
+													<label class="pt-5 pb-20" for="HybCheckBox">Hybrid</label>
+													<input class="mt-12 ml-10" type="radio" id="HybCheckBox"  name="optBox" value="HybOpt" onclick="myFunction()">
+												</div>												
+										</div>											
+										<hr class="mt-5 mb-10" />
+										<h4>Indicate the number for each item : </h4>
+										<div>											
+											<div class="row" id="AptForm" style="display:none" >	
+													<input class="col-md-4 m-3" type="number" min="0" name="NbDoor_res" placeholder="Residential" oninput="this.value = Math.abs(this.value)" >
+													<input class="col-md-3 m-3" type="number" min="0" name="NbFloor_res" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
+													<input class="col-md-4 m-3" type="number" min="0" name="NbBasements_res" placeholder="Basements" oninput="this.value = Math.abs(this.value)">									
+											</div>
+										</div>
+										<div>													
+											<div id="ComForm" style="display:none">
+												<div class="row" >	
+													<input class="col-md-4 m-3" type="number" min="0" name="BusinessNb" placeholder="Businesses" oninput="this.value = Math.abs(this.value)">
+													<input class="col-md-3 m-3" type="number" min="0" name="FloorComNb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
+													<input class="col-md-4 m-3" type="number" min="0" name="ComBasementNb" placeholder="Basements" oninput="this.value = Math.abs(this.value)"> 																																			
+												</div>
+												<div class="row">
+													<input class="col-md-5 m-7  " type="number" min="0" name="ComParkNb" placeholder="Parking Space" oninput="this.value = Math.abs(this.value)">
+													<input class="col-md-5 m-7" type="number" min="0" id="CageComElevatorNb" name="CageComElevatorNb" placeholder="Elevator Cage" oninput="this.value = Math.abs(this.value)">
+												</div>
+											</div>	
+											</div>
+											<div>													
+												<div id="CorpForm" style="display:none">
+													<div class="row">	
+														<input class="col-md-4 m-3" type="number" min="0" name="sepTenantNb" placeholder="Separate tenant" oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-3 m-3" type="number" min="0" name="NbFloor_Corp" placeholder="Floors" oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-4 m-3" type="number" min="0" name="NbBasement_corp" placeholder="Basements" oninput="this.value = Math.abs(this.value)"> 																																			
+													</div>
+													<div class="row">
+														<input class="col-md-4 m-10" type="number" min="0" name="CorpParkNb" placeholder="Parking " oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-6 m-10" type="number" min="0" name="OccByFloor_corp" placeholder="Occupants per floor" oninput="this.value = Math.abs(this.value)">
+													</div>
+												</div>
+											</div>
+											<div>													
+												<div  id="HybForm" style="display:none">
+													<div class="row">	
+														<input class="col-md-5 m-10" type="number" min="0" name="BusinessHybridNb" placeholder="Distinct Businesses" oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-5 m-10" type="number" min="0" name="NbFloor_Hyb" placeholder="Floors" oninput="this.value = Math.abs(this.value)">													 																																			
+													</div>
+													<div class="row">
+														<input class="col-md-5 m-10" type="number" min="0" name="NbBasement_Hyb" placeholder="Basements" oninput="this.value = Math.abs(this.value)">
+														<input class="col-md-5 m-10" type="number" min="0" name="HybParkNb" placeholder="Parking Space" oninput="this.value = Math.abs(this.value)">
+													</div>
+													<div class="row">
+														<input class="col-md-5 m-10" type="number" min="0" name="OccByFloor_Hyb" placeholder="Occupants by floor" oninput="this.value = Math.abs(this.value)">	
+														<input id="max24" class="col-md-5 m-10" type="number" min="0" max="24"  name="ActivHour" placeholder="Active Hour (Max: 24h)" oninput="this.value = Math.abs(this.value)"  >													
+													</div>
+											</div>
+										</div>
+										
+									</div>	
+																																																
+									<div class="container_form_Answer col-md-4 ">
+										<div class="container_answer" >
+											<h4>RESULTS FOR :</h4>
+											<div id="buildingType_answer" class="center-text">
+												<p id="AptChoiceText" class="mb-10" style="Display:none"><strong><em>Apartement</em></strong></p>
+												<p id="ComChoiceText" class="mb-10" style="Display:none"><strong><em>Commercial</em></strong></p>
+												<p id="CorpChoiceText" class="mb-10" style="Display:none"><strong><em>Corporate</em></strong></p>
+												<p id="HybChoiceText" class="mb-10" style="Display:none"><strong><em>Hybrid</em></strong></p>
+											</div>
+											<hr class="mt-15 mb-15" />																		
+										</div>
+										<div class="container_elevator-need" id="nb-elevator-need">
+												<h4><em>ELEVATOR NEEDED :</em></h4>
+												<h2 id="elevator-needed"></h2>
+											</div>
+										<div >
+											<hr class="mt-20 mb-25" />
+											<div class="costPrice">
+												<h4><em>ESTIMATED COST :</em></h4>
+												<h2 id="cost-result"></h2>
+											</div>
+										</div>											
+									</div>										
+								</div>
+								<div id="product-line-cost" class="container_form_extra_fee ">
+									<h4>Choose your elevator product line :</h4>
+									<div class="row">
+										<div class="col-md-4">
+											<input class="m-5" type="radio" class="elevator_Result" id="Std_Check" name="OptCheck" value="8321.5">
+											<label for="Std_Check">Standard (7 565$) <br /> <em>(Good Value)</em></label><br>
+										</div>
+										<div class="col-md-4">
+											<input class="m-5" type="radio" class="elevator_Result" id="Prem_Check" checked="checked" name="OptCheck" value="13949.85">
+											<label for="Prem_Check">Premium (12 345$) <br /> <em>(Most Popular)</em></label><br>  
+										</div>
+										<div class="col-md-4">
+											<input class="m-5" type="radio" class="elevator_Result" id="Exc_Check"  name="OptCheck" value="17864">
+											<label for="Exc_Check">Excelium (15 400$) <br /><em>(Award-winning   Service)</em>  </label><br><br>
+										</div>
+										The installation fee varies for each product line (10% for the standard, 13% for the Premium and 16% for the Excelium) !
+									</div>
+								</div>
+							</form>
+							<!-- /FORM -->
+
+							<hr class="mt-50 mb-50" />
+
+
+		
+
+							<div class="row">
+
+								<!-- left - address -->
+								<div class="col-md-4 col-sm-4">
+
+									<p>
+										<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 725 boulevard Lebourgneuf <br /> Québec, Canada <br /> G2J 0C4</span>
+										<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:581-701-0303">581-701-0303</a></span>
+										<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@codeboxx.biz">info@codeboxx.biz</a></span>
+									</p>
+
+								</div>
+
+								<!-- right - program -->
+								<div class="col-md-4 col-sm-4">
+
+									<p>
+										<span class="block"><strong>Monday - Friday:</strong> 8am to 5pm</span>
+										<span class="block"><strong>Saturday &AMP; Sunday:</strong> 9am to 5pm</span>
+									</p>
+									
+								</div>
+								<!-- Social Icons -->
+								<div class="mt-30 text-center col-md-4 col-sm-4">
+									<a target="blank" href="https://www.facebook.com/sharer/sharer.php?u=http://codeboxx.biz/campus"  class="social-icon social-icon-border social-facebook " data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+
+									<a target="blank" href="https://twitter.com/share?url=http://codeboxx.biz/campus"  class="social-icon social-icon-border social-twitter " data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+
+									<a target="blank" href="https://www.instagram.com/codeboxxschool"  class="social-icon social-icon-border social-instagram " data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+
+									<a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://codeboxx.biz/campus/&amp;title=&amp;summary=&amp;source=" class="social-icon social-icon-border social-linkedin " data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+								<!-- /Social Icons -->
+
+							</div>
+
+						</div>							
+					</div>
+				</div>
+			</section>
+			<!-- / -->
+			<!-- PARALLAX -->
+			<section class="parallax parallax-2" style="background-image: url('assets/images/custom/Service_Corporate/Background/BckGrnd_Serv_Corp.jpg');">
+				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container countTo-sm text-center ">
+					<div class="row">
+						<div class="col-6 col-sm-3">
+							<i class="fa fa-users fs-65"></i> &nbsp; 
+							<span class="countTo" data-speed="10000" style="color:#00c3ff">7652</span>
+							<h6>HAPPY CLIENTS</h6>
+						</div>
+
+						<div class="col-6 col-sm-3">
+							<i class="fa fa-briefcase fs-65"></i> &nbsp; 
+							<span class="countTo" data-speed="10000" style="color:#00c3ff">56000</span>
+							<h6>FINISHED PROJECTS</h6>
+						</div>
+
+						<div class="col-6 col-sm-3">
+							<i class="fa fa-twitter fs-65"></i> &nbsp; 
+							<span class="countTo" data-speed="10000" style="color:#00c3ff">7234</span>
+							<h6>TWITTER FOLLOWERS</h6>
+						</div>
+
+						<div class="col-6 col-sm-3">
+							<i class="fa fa-facebook fs-65"></i> &nbsp; 
+							<span class="countTo" data-speed="10000" style="color:#00c3ff">8597</span>
+							<h6>FACEBOOK FOLLOWERS</h6>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- /PARALLAX -->
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								We have earned our reputation as a company that manages a complete inspection process. All of our inspectors have extensive field experience as well as a thorough knowledge of code. Our office staff is friendly and always willing to answer any of your questions.
+							</p>
+							<h2>(581) 701-0303</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success btn-3d" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						&copy; All Rights Reserved, Rocket Elevator <sup>LTD</sup>
+					</div>
+				</div>
+
+			</footer>			
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		<script src="form_sheet.js"></script>
+		
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+	</body>
+</html>
