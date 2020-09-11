@@ -176,12 +176,10 @@
 											NEWS
 										</a>
 									</li>
-									</li>
 									<li><!-- CLIENTS -->
 										<a href="#clients">
 											CLIENTS
 										</a>
-									</li>
 									</li>
 									<li><!-- CONTACT -->
 										<a href="#contact">
@@ -283,7 +281,7 @@
 							data-elementdelay="1"
 							data-endelementdelay="0.1"
 							data-endspeed="500"
-							style="z-index: 4; max-width: auto;">
+							style="z-index: 4; ">
 								<a class="btn btn-info btn-lg" href="#services">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 						</div>
 
@@ -298,7 +296,7 @@
 							data-elementdelay="0.1"
 							data-endelementdelay="0.1"
 							data-endspeed="500"
-							style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+							style="z-index: 6; white-space: nowrap;">
 								<a class="btn btn-default btn-lg" href="Request_A_Quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
 						</div>
 					</li>
@@ -353,7 +351,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="300"
 
-								style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
+								style="z-index: 5; white-space: nowrap;">
 									<a class="btn btn-info btn-lg" href="RE_Service_Residential_Building.html">RESIDENTIAL SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 					</li>
@@ -408,7 +406,7 @@
 														data-elementdelay="1"
 														data-endelementdelay="0.1"
 														data-endspeed="500"
-														style="z-index: 4; max-width: auto;">
+														style="z-index: 4;">
 															<a class="btn btn-info btn-lg" href="RE_Service_Corporate_Bulding.html">Corporate Service &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>								
 					</li>
@@ -908,7 +906,6 @@
 			<!-- Testimonials -->
 			<section class="section-xs dark">
 				<div class="container">
-
 					<div class="owl-carousel text-center owl-testimonial m-0" data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
 						<div class="testimonial">
 							<figure>
@@ -937,7 +934,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</section>
 			<!-- /Testimonials -->
@@ -981,7 +977,7 @@
 													<li>Put on your mask first</li>
 													<li>Wash your hands</li>
 													<li>Avoid touching others</li>
-												</ol> </p>
+												</ol> 
 							<ul class="text-left fs-12 list-inline list-separator">
 								<li>
 									<i class="fa fa-calendar"></i> 
@@ -1180,7 +1176,7 @@
 												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name" placeholder="Your Name">
 											</div>
 											<div class="col-md-6">
-												<label for="contact:business">Business Name * </label>
+												<label for="contact:Business">Business Name * </label>
 												<input required type="text" value="" class="form-control" name="contact[Business]" id="contact:Business"
 												placeholder="Business">
 											</div>																					
@@ -1202,7 +1198,7 @@
 											</div>
 											<div class="col-md-4">
 												<label for="contact_department">Department</label>
-												<select class="form-control pointer" name="contact[department]">
+												<select class="form-control pointer" name="contact[department]" id="contact_department">
 													<option value="">--- Select ---</option>
 													<option value="Residential">Residential</option>
 													<option value="Corporate">Corporate</option>
@@ -1228,7 +1224,7 @@
 												<!-- custom file upload -->
 												<div class="fancy-file-upload fancy-file-info">
 													<i class="fa fa-upload"></i>
-													<input type="file" class="form-control" name="contact[attachment]" onchange="jQuery(this).next('input').val(this.value);" />
+													<input type="file" class="form-control" name="contact[attachment]" id="contact:attachment" onchange="jQuery(this).next('input').val(this.value);" />
 													<input type="text" class="form-control" placeholder="no file selected" readonly="" />
 													<span class="button ">Choose File</span>
 												</div>
@@ -1270,7 +1266,7 @@
 								h-600
 							-->
 
-							<iframe width="450" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Levis+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://mapswebsite.net/fr'>http://mapswebsite.net/fr</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=fcb0a9123868ff8165b8909ce7d7d2e77eb355d0'></script>
+							<iframe width="450" height="600" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Levis+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://mapswebsite.net/fr'>http://mapswebsite.net/fr</a> <script  src='https://maps-generator.com/google-maps-authorization/script.js?id=fcb0a9123868ff8165b8909ce7d7d2e77eb355d0'></script>
 
 							<hr />
 
