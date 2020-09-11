@@ -62,23 +62,26 @@ $("#max24").keyup(function() {
 
 
 /************* Function to calculate the total amount of elevator and the price tag **************/
-
+$(function () {
     $("#requestQuote").on("change", function(){
         var $prod_line = $(this).find("input[type='radio'][name=OptCheck]:checked");
         var prod_line = $prod_line.val() || 0;
         
-       
                 /********** Generate the estimated cost for Commercial use and Number of Elevator needed  **********/
 
             $("#ComForm").on("change keyup", function() {
-                var $elevNum = $(this).find("[name=CageComElevatorNb]"); // Scope the Nb of elevator needed
+                var $elevNum = $(this).find("[id=CageComElevatorNb]"); // Scope the Nb of elevator needed
                 var elevNum = $elevNum.val();   // Set value
                 var raw_total_Cost = elevNum * prod_line; // multiply
                 var roundedCost = raw_total_Cost.toFixed(2); // fix 2 digits after comma
                 var total_Cost = Number(roundedCost);   // set to number
+
                 $("#cost-result").text(total_Cost + " $");
-                $("#elevator-needed").text(elevNum);                                    
+                $("#elevator-needed").text(elevNum); 
+                             
             })
+
+            
 
                 /*********** Generate the estimate Cost For Corporative use and Number of Elevator needed  ************/
 
@@ -101,8 +104,10 @@ $("#max24").keyup(function() {
 
                 $("#elevator-needed").text(totalElev);
                 $("#cost-result").text(total_Cost + " $");   
-                })
+    
+            })
 
+                
                 /*********** Generate the estimate Cost For Hybrid use and Number of Elevator needed  ************/
 
             $("#HybForm").on("change keyup", function(){
@@ -149,6 +154,5 @@ $("#max24").keyup(function() {
             
 
             })
-        
-
+        })        
     })
