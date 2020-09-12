@@ -6862,7 +6862,7 @@ section#slider:not(.custom-form) .btn-default {
 	.swiper-button-next:hover,
 	.swiper-button-prev:hover {
 		color:#fff
-		background-color:rgba(0,0,0,0.5);
+		background-color=rgba(0,0,0,0.5);
 	}
 
 	

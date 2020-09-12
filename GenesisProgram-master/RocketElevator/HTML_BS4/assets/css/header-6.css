@@ -139,7 +139,7 @@
 
 /* mobile nav toggle */
     #header.header-light .nav-toggle {
-        background: url('../images/_smarty/misc/burger-dark.svg') center no-repeat;
+        background: url('../images/Misc/misc/burger-dark.svg') center no-repeat;
     }
 
 
@@ -170,12 +170,12 @@
     }
     /* mobile nav toggle */
     #header.header-dark .nav-toggle {
-        background: url('../images/_smarty/misc/burger-light.svg') center no-repeat;
+        background: url('../images/Misc/misc/burger-light.svg') center no-repeat;
         border-color: rgba(255,255,255,0.2);
     }
      /* mobile nav close */
     #header.header-dark nav.main-nav>.main-nav-mobile-header .nav-toggle-close {
-        background: url('../images/_smarty/misc/close-light.svg') center no-repeat !important;
+        background: url('../images/Misc/misc/close-light.svg') center no-repeat !important;
     }
 
 
@@ -201,7 +201,7 @@
 
     /* mobile nav toggle */
     #header.header-transparent .nav-toggle {
-        background: url('../images/_smarty/misc/burger-light.svg') center no-repeat;
+        background: url('../images/Misc/misc/burger-light.svg') center no-repeat;
         border-color: rgba(255,255,255,0.2);
     }
 
@@ -796,7 +796,7 @@ nav.main-nav>.main-nav-mobile-header {
         float: left;
         z-index: 1;
 
-        background: url('../images/_smarty/misc/close-dark.svg') center no-repeat;
+        background: url('../images/Misc/misc/close-dark.svg') center no-repeat;
 
         -webkit-border-radius: 0 !important;
                 border-radius: 0 !important;
