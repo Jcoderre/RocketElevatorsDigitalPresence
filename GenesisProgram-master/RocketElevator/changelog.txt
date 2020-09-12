@@ -10,12 +10,12 @@
 	* Fix: Added back the SEED folder, previously removed
 	* Fix: Background Sizing on Parallax Mobile/Tablet (changes: assets/css/layout.css)
 	* Fix [Bootstrap 4]: Verical Menu (changes: assets/css/layout.css)
-	* Fix [Bootstrap 4[: Smarty Caffe Package - Mobile Menu (changes: pack-caffe-*-1.html)
+	* Fix [Bootstrap 4[: Misc Caffe Package - Mobile Menu (changes: pack-caffe-*-1.html)
 	* Fix: jQuery Onepage Navigation Plugin which caused a broke JS on href="#" (changes: asset/plugins/jquery.nav.min.js)
 	* New: Google Recaptcha (changes: php/contact.php)
 	* New: Contact Form Page With Recaptcha (added: page-contact-recaptcha.html)
 	* New: Visual Chart (changes: assets/css/essentials.css ; see it in action: about us pages)
-	* Update: Smarty Documentation (Recaptcha Usage)
+	* Update: Misc Documentation (Recaptcha Usage)
 
 
 
@@ -106,7 +106,7 @@
 	## BOOSTRAP 3
 	## UPDATE NOTES: - this major version has a lot of changes but most of them are in JS and CSS files.
 	##		 - html structure for Boostrap 3 is untouched so your existing project should not be affected.
-	## 		 - pay attention to assets/images - all smarty images are moved into a separate folder (assets/images/_smarty)
+	## 		 - pay attention to assets/images - all Misc images are moved into a separate folder (assets/images/_Misc)
 	##		 - before you update your project, don't forget to create a backup!
 	## 		 - estimated time to update an existing project: ~5 minutes (only a copy/paste is needed - read careful "Moved" below)
 	##
@@ -170,11 +170,11 @@
 	* New: Added #header.disable-uppercase -  disable forcing uppercase menu text (changes: assets/css/layout.css, usage example: pack-photography-home-1.html)
 	* New: Cookie alert (changes: assets/css/layout.css , assets/js/scripts.js ; usage example: page-cookie-alert.html)
 	* New: Bootstrap 4 elements (floats, cards, text align) (changes: assets/css/essentials.css)
-	* New: Custom form elements - more clean and pro - optional, to rewrite default smarty forms (added: assets/css/custom-forms-v2.css, example usage: pack-realestate-home-1.html)
+	* New: Custom form elements - more clean and pro - optional, to rewrite default Misc forms (added: assets/css/custom-forms-v2.css, example usage: pack-realestate-home-1.html)
 	* New: OWL Carousel 2 (changes: assets/css/essentials.css , added: assets/plugins/owl-carousel-2 , shortcode-carousel-2.html)
 	* New: Fullscreen Google Map (changes: assets/css/layout.css, shortcode-maps.html)
 	* New: Money Number Format Function (changes: assets/js/scripts.js) ;  USAGE: mynumber.formatMoney(2, '.', ',')
-	* New: Default lazy load no image (added: assets/images/_smarty/lazy-loadimg.png)
+	* New: Default lazy load no image (added: assets/images/_Misc/lazy-loadimg.png)
 	* New: image raster pattern - add lines over an image (changes: assets/css/essentials.css ; example: pack-hotel-home-1.html - the lines over the main image)
 	* New: Backstretch PREV/NEXT navigation (changes: assets/css/layout.css , assets/js/scripts.js , example usage: pack-hotel-home-1.html)
 	* New: Backstretch Slider (changes: added feature-slider-backstretch.html)
@@ -184,7 +184,7 @@
 	* New: Added .text-vertical class to rotate text/image (changes: assets/css/essentials.css)
 	* New: Premium Hover Cicles (changes: assets/css/layout.css , shortcode-thumbnails.html)
 	* New: Bordered grid (2-3-4-5-6 columns) (changes: assets/css/essentials.css, assets/css/layout-dark.css, shortcode-clients.html)
-	* New: Header layout (changes: assets/js/scripts.js, added: assets/css/header-6.css, assets/images/_smarty/misc/*.svg, example: /feature-menu-12.html)
+	* New: Header layout (changes: assets/js/scripts.js, added: assets/css/header-6.css, assets/images/_Misc/misc/*.svg, example: /feature-menu-12.html)
 	* New: isMobile JS function to detect mobile devices (phone/tablet) (changes: assets/js/scripts.js ; usage: if( isMobile.any() ) alert('Mobile');)
 	* New: .box-border-shadow class - border+shadow material design style (changes: assets/css/essentials.css , usage example: pack-megashop-cart-checkout.html)
 	* New: Height precentage classes: .h-10p, .h-20p, .h-25p, .h-33p, .h-50p, .h-100p - uses "vh" (changes: assets/css/essentials.css)
@@ -243,7 +243,7 @@
 	* Update: Use custom button for menu overlay button by adding class: .custom-button (changes: assets/css/header-0.css, example usage: pack-hotel-home-1.html)
 	* Update: Small dark layout fixes (assets/css/layout-dark.css)
 	* Update: Parallax plugin to v1.1.3 (changes: assets/js/scripts.js)
-	* Update: Smarty Documentation - RTL section
+	* Update: Misc Documentation - RTL section
 	* Update: Image Zoom from v1.7.14 to v1.7.20 (changes: replaced assets/plugins/image.zoom/ folder)
 	* Update: Image Zoom - forced grab on mobile device for best experience (changes: assets/js/scripts.js)
 	* Update: Removed role="form" from all html files (changes: *.html)
@@ -251,7 +251,7 @@
 
 	* Moved: Blog and Shop in one menu category: Blog & Shop (changes: all html files)
 	* Moved: /assets/images/demo/  to  /demo_files/ folder (changes: all HTML and CSS files - image path renamed)
-	* Moved: /assets/imgaes/*  to /assets/imgaes/_smarty/  folder - from now, smarty files will be in one organized place.
+	* Moved: /assets/imgaes/*  to /assets/imgaes/_Misc/  folder - from now, Misc files will be in one organized place.
 	* Moved: /assets/plugins/styleswitcher/  to  /demo_files/ (not required as a production plugin - demo purpose only)
 
 	* NOTE: thematics = home page layouts only ; package = complete website (multiple designed pages [home/about/contact/etc] for a dedicated niche)

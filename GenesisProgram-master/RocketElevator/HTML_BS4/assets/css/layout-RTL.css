@@ -106,11 +106,11 @@ img.float-right {
 		text-align:right;
 	}
 	#topNav ul.dropdown-menu a.dropdown-toggle {
-		background-image: url('../images/_smarty/submenu_inverse_light.png');
+		background-image: url('../images/_Misc/submenu_inverse_light.png');
 		background-position:left center;
 	}
 	#topNav div.submenu-dark ul.dropdown-menu a.dropdown-toggle {
-		background-image: url('../images/_smarty/submenu_inverse_dark.png');
+		background-image: url('../images/_Misc/submenu_inverse_dark.png');
 		background-position:left center;
 	}
 	#topNav ul.dropdown-menu>li a i {
@@ -164,7 +164,7 @@ img.float-right {
 			text-align:left;
 		}
 	body.menu-vertical #mainMenu.sidebar-vertical .navbar-default .navbar-nav>li>a.dropdown-toggle {
-		background-image: url('../images/_smarty/submenu_inverse_light.png');
+		background-image: url('../images/_Misc/submenu_inverse_light.png');
 		background-position:center left;
 	}
 
@@ -533,7 +533,7 @@ section.dark .timeline.timeline-inverse>.timeline-hline {
 	.timeline_center li:nth-child(even) { text-align:left; }
 	@media only screen and (max-width: 650px) {
 		.timeline_center { background:transparent; }
-		.timeline_center li { padding: 0 70px 25px 0 !important; background: url('../images/_smarty/timeline/timeline_left.png') no-repeat !important; background-position: 107% top !important; width: auto; }
+		.timeline_center li { padding: 0 70px 25px 0 !important; background: url('../images/_Misc/timeline/timeline_left.png') no-repeat !important; background-position: 107% top !important; width: auto; }
 		.timeline_center li h3 span { position:relative; display:block; right:auto; left:auto; padding:5px 0 !important; margin:0; }
 		.timeline_center li:nth-child(even) h3 span { position:relative; display:block; right:auto; left:auto; padding:0; margin:0; }
 		.timeline_center li h3 { font-size:24px; line-height:24px; }

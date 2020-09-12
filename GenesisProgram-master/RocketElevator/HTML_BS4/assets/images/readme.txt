@@ -1,4 +1,4 @@
-Starting with version 1.2.2, all misc images are moved to Smarty/ folder.
+Starting with version 1.2.2, all misc images are moved to Misc/ folder.
 Demo files are moved to /demo_files/ root folder - safe to delete this entire demo folder on production.
 
 
