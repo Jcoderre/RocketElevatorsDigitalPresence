@@ -1,34 +1,55 @@
 /************** CSS For Request a Form ***************/
 
+h1 {
+    text-shadow: 2px 1px whitesmoke;
+}
+
+h2 {
+    text-shadow: 2px 1px whitesmoke;
+}
+
+
+body {
+    background-image: url(assets/images/custom/Background/Minimalist-background.jpg); 
+}
+
+#header-form {
+    font-weight: 1200;
+}
+
+#SectionImage {
+    background-image: url(assets/images/custom/Background/Minimalist-background.jpg);
+}
 
 .container_form {
-    border-radius: 35px;
+    background:rgba(150, 204, 240, 0.13);
+    border-radius: 50px;
     padding: 10px;
-    border: 5px solid rgb(158, 177, 182);
+    border: 5px solid rgb(165, 169, 170);
     text-align: center;
     height: 450px;
-    position: relative;
+    margin: 0 auto;
 }
 
 .container_form_Answer {
+    background:rgba(150, 204, 240, 0.13);
     border-radius: 50px;
     padding: 10px;
-    border: 5px solid rgb(158, 177, 182);
+    border: 5px solid rgb(165, 169, 170);
     text-align: center;
     height: 450px;
-    position: relative;
-    margin-left: 10px;
 }
 
 .container_form_extra_fee {
+    background:rgba(150, 204, 240, 0.13);
     border-radius: 50px;
-    padding: 10px;
-    border: 5px solid rgb(158, 177, 182);
+    padding: 20px;
+    border: 5px solid rgb(165, 169, 170);
     text-align: center;
     height: 240px;
-    width: 840px;
-    position: relative;
-    margin-left: 10px;
+    width: 80%;
+    margin: 0 auto;
+     
 }
 
 .container_answer {

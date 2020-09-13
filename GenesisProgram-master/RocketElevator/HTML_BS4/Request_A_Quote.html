@@ -51,7 +51,7 @@
 		BACKGROUND IMAGE [together with .boxed class]
 		data-background="assets/images/_Misc/boxed_background/1.jpg"
 	-->
-	<body class="smoothscroll enable-animation grain-blue ">
+	<body class="smoothscroll enable-animation   ">
 
 		<!-- wrapper -->
 		<div id="wrapper">
@@ -113,7 +113,7 @@
 									
 									Add .external for an external link!
 								-->
-								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage ">
 									<li><!-- HOME -->
 										<a href="index.html">
 											HOME
@@ -186,14 +186,14 @@
 			<section class="page-header pb-0">
 				<div class="container">
 
-					<h1>REQUEST A QUOTE</h1>
+					<h2 class="text-black"><em>REQUEST A QUOTE</em></h2>
 
 					<!-- breadcrumbs -->
-					<ol class="breadcrumb text-black">
-						<li><a href="index-Rocket_Elevator.html" style="color:rgb(124, 124, 124)">Home</a></li>
-						<li><a href="RE_Service_Residential_Building.html" style="color:rgb(124, 124, 124)">Residential</a></li>
-						<li><a href="RE_Service_Corporate_Bulding.html" style="color:rgb(124, 124, 124)">Corporate</a></li>
-						<li class="active">Request a quote</li>					
+					<ol class="breadcrumb text-white ">
+						<li><a href="index-Rocket_Elevator.html" style="color:rgb(255, 249, 249)">Home</a></li>
+						<li><a href="RE_Service_Residential_Building.html" style="color:rgb(255, 249, 249)">Residential</a></li>
+						<li><a href="RE_Service_Corporate_Bulding.html" style="color:rgb(255, 249, 249)">Corporate</a></li>
+						<li class="active text-info">Request a quote</li>					
 					</ol><!-- /breadcrumbs -->
 
 				</div>
@@ -202,22 +202,22 @@
 
 			<!-- -->
 
-			<section class="pt-50 pb-55">
-				<div class="container">
+			<section id="SectionImage" class="">
+				<div class="container text-white">
 					
 					<!-- FORM -->
 					<div>
 						<div>							
-							<h3 class="text-center"><em>REQUEST A QUOTE FORM</em></h3>
+							<h1 class="text-center text-black ">REQUEST A QUOTE FORM</h1>
 							<form id="requestQuote" >									
-								<div class="row col-sm-10 ">									
+								<div class="row ">									
 									<div id="form-selected" class="container_form col-md-7 pl-20">
 										
-										<h4>Choose your building type project:</h4>
+										<h4 class="text-white">Choose your building type project:</h4>
 										<hr class="mt-5 mb-5" />
 										<div class="row">
 												<div class="col-md-3" >
-													<label class="pt-5 pb-20" for="AptCheckBox">Residential</label>
+													<label class="pt-5 pb-20 " for="AptCheckBox">Residential</label>
 													<input class="mt-12 ml-10" type="radio" id="AptCheckBox" name="optBox" value="AptOpt" onclick="myFunction()">
 												</div>	
 												<div class="col-md-3">
@@ -234,7 +234,7 @@
 												</div>												
 										</div>											
 										<hr class="mt-5 mb-10" />
-										<h4>Indicate the number for each item : </h4>
+										<h4 class="text-white">Indicate the number for each item : </h4>
 										<div>											
 											<div class="row" id="AptForm" style="display:none" >	
 													<input class="col-md-4 m-3" type="number" min="0"  id="NbDoor_res" name="NbDoor_res" placeholder="Apartement" oninput="this.value = Math.abs(this.value)" >
@@ -287,9 +287,9 @@
 										
 									</div>	
 																																																
-									<div class="container_form_Answer col-md-4 ">
+									<div class="container_form_Answer col-md-4 text-white">
 										<div class="container_answer" >
-											<h4>RESULTS FOR :</h4>
+											<h4 class="text-white">RESULTS FOR :</h4>
 											<div id="buildingType_answer" class="center-text">
 												<p id="AptChoiceText" class="mb-10" style="Display:none"><strong><em>Apartement</em></strong></p>
 												<p id="ComChoiceText" class="mb-10" style="Display:none"><strong><em>Commercial</em></strong></p>
@@ -298,21 +298,21 @@
 											</div>
 											<hr class="mt-15 mb-15" />																		
 										</div>
-										<div class="container_elevator-need" id="nb-elevator-need">
-												<h4><em>ELEVATOR NEEDED :</em></h4>
-												<h2 id="elevator-needed"></h2>
+										<div class="container_elevator-need " id="nb-elevator-need">
+												<h4 class="text-white"><em>ELEVATOR NEEDED :</em></h4>
+												<h2 id="elevator-needed" class="text-white"></h2>
 											</div>
 										<div >
 											<hr class="mt-20 mb-25" />
 											<div class="costPrice">
-												<h4><em>ESTIMATED COST :</em></h4>
-												<h2 id="cost-result"></h2>
+												<h4 class="text-white"><em>ESTIMATED COST :</em></h4>
+												<h2 id="cost-result" class="text-white"></h2>
 											</div>
 										</div>											
 									</div>										
 								</div>
-								<div id="product-line-cost" class="container_form_extra_fee ">
-									<h4>Choose your elevator product line :</h4>
+								<div id="product-line-cost" class="container_form_extra_fee col-auto my-auto ">
+									<h4 class="text-white">Choose your elevator product line :</h4>
 									<div class="row" id = "Radio_Btn">
 										<div class="col-md-4">
 											<input class="m-5 elevator_Result" type="radio"  id="Std_Check" name="OptCheck"  value="8321.5">
