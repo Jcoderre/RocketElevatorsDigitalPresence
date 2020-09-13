@@ -8,7 +8,7 @@ h1 {
 
 
 body {
-    background-image: url(assets/images/custom/Background/Minimalist-background.jpg); 
+    background-image: url(../images/custom/Background/Minimalist-background.jpg); 
 }
 
 #BreadCrumbs_Quote {
@@ -21,7 +21,7 @@ body {
 }
 
 #SectionImage {
-    background-image: url(assets/images/custom/Background/Minimalist-background.jpg);
+    background-image: url(../images/custom/Background/Minimalist-background.jpg);
 }
 
 .container_form {
