@@ -4,13 +4,16 @@ h1 {
     text-shadow: 2px 1px whitesmoke;
 }
 
-h2 {
-    text-shadow: 2px 1px whitesmoke;
-}
+
 
 
 body {
     background-image: url(assets/images/custom/Background/Minimalist-background.jpg); 
+}
+
+#BreadCrumbs_Quote {
+    text-shadow: 2px 1px whitesmoke;
+    color: black;
 }
 
 #header-form {
