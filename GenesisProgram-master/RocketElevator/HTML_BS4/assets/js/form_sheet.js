@@ -72,11 +72,22 @@ function CommCalculate() {
     prod_line = $prod_line.val() || 0;
 
     var $elevNum = $("#ComForm").find("[id=CageComElevatorNb]"); // Scope the Nb of elevator needed
-    var elevNum = $elevNum.val();   // Set value
-    var raw_total_Cost = elevNum * prod_line; // multiply
+    var elevNum = $elevNum.val() || 0;   // Set value
+    var raw_total_Cost = elevNum * prod_line ; // multiply
     var roundedCost = raw_total_Cost.toFixed(2); // fix 2 digits after comma
     var total_Cost = Number(roundedCost);   // set to number
-    $("#cost-result").text(total_Cost + " $");
+    var price = total_Cost,                 // format price to $ CAD
+        locale = "en-CA",
+        currency = "CAD";
+    
+    var formatter = new Intl.NumberFormat (locale, {
+        style: "currency",
+        currency: currency,
+    });
+
+    var formattedPrice = formatter.format(price);
+
+    $("#cost-result").text(formattedPrice);
     $("#elevator-needed").text(elevNum);
     
 }
@@ -102,9 +113,20 @@ function ResidentialCalculate() {
     var raw_total_Cost = NbRealElev_res * prod_line;
     var roundedCost  = raw_total_Cost.toFixed(2);        // fix 2 digits after comma
     var total_Cost   = Number(roundedCost);       // set to number
+    var price = total_Cost,                    // format price to $ CAD     
+        locale = "en-CA",
+        currency = "CAD";
+    
+    var formatter = new Intl.NumberFormat (locale, {
+        style: "currency",
+        currency: currency,
+    });
+
+    var formattedPrice = formatter.format(price);
+
     
     $("#elevator-needed").text(NbRealElev_res);
-    $("#cost-result").text(total_Cost + " $");
+    $("#cost-result").text(formattedPrice);
 }
 
 /*********** function estimate Cost For Corporative use and Number of Elevator needed  ************/
@@ -119,7 +141,7 @@ function CorporateCalculate() {
     var nbOfBasement = $nbOfBasement.val();   
     var $nbOfFloor = $("#CorpForm").find("[name=NbFloor_Corp]");   //Scope the Nb of Floor
     var nbOfFloor = $nbOfFloor.val();   
-    var nbOfStories = +nbOfFloor + +nbOfBasement;       //set to number
+    var nbOfStories = +nbOfFloor - +nbOfBasement;       //set to number
     var totalOcc = occByFloor * nbOfStories;
     var nbOfElevator = totalOcc / parseInt("1000", 10);
     var nbOfColumn = nbOfStories / parseInt("20", 10);
@@ -128,9 +150,20 @@ function CorporateCalculate() {
     var raw_total_Cost = Math.ceil(totalElev) * prod_line; // multiply
     var roundedCost = raw_total_Cost.toFixed(2);        // fix 2 digits after comma
     var total_Cost = Number(roundedCost);       // set to number
+    var price = total_Cost,                     // format price to $ CAD
+        locale = "en-CA",
+        currency = "CAD";
+    
+    var formatter = new Intl.NumberFormat (locale, {
+        style: "currency",
+        currency: currency,
+    });
+
+    var formattedPrice = formatter.format(price);
+
 
     $("#elevator-needed").text(totalElev);
-    $("#cost-result").text(total_Cost + " $");   
+    $("#cost-result").text(formattedPrice);   
 }
 
 
@@ -146,7 +179,7 @@ function hybridCalculate() {
     var nbOfBasement = $nbOfBasement.val();   
     var $nbOfFloor = $("#HybForm").find("[name=NbFloor_Hyb]");   //Scope the Nb of Floor 
     var nbOfFloor = $nbOfFloor.val();  
-    var nbOfStories = +nbOfFloor + +nbOfBasement;       //set to number
+    var nbOfStories = +nbOfFloor - +nbOfBasement;       //set to number
     var totalOcc = occByFloor * nbOfStories;
     var nbOfElevator = totalOcc / parseInt("1000", 10) ; 
     var nbOfColumn = nbOfStories / parseInt("20", 10) ;
@@ -155,10 +188,19 @@ function hybridCalculate() {
     var raw_total_Cost = totalElev * prod_line; // multiply
     var roundedCost = raw_total_Cost.toFixed(2);        // fix 2 digits after comma
     var total_Cost = Number(roundedCost);       // set to number
+    var price = total_Cost,                     // format price to $ CAD
+        locale = "en-CA",
+        currency = "CAD";
+    
+    var formatter = new Intl.NumberFormat (locale, {
+        style: "currency",
+        currency: currency,
+    });
+
+    var formattedPrice = formatter.format(price);
 
     $("#elevator-needed").text(totalElev);
-    $("#cost-result").text(total_Cost + " $");
-
+    $("#cost-result").text(formattedPrice);
 }
 
 
@@ -233,7 +275,7 @@ function Btn_Select() {
     }            
 }
 
-/*************  **************/
+/************* Show the final Result of the selected Production Line **************/
 $(function () {  
 
         $("#requestQuote").on("change keyup click", function() {

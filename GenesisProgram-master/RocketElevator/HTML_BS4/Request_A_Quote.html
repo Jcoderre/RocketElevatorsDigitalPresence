@@ -51,7 +51,7 @@
 		BACKGROUND IMAGE [together with .boxed class]
 		data-background="assets/images/_Misc/boxed_background/1.jpg"
 	-->
-	<body class="smoothscroll enable-animation   ">
+	<body class="smoothscroll enable-animation ">
 
 		<!-- wrapper -->
 		<div id="wrapper">
@@ -209,13 +209,13 @@
 					<div>
 						<div>							
 							<h1 class="text-center text-black ">REQUEST A QUOTE FORM</h1>
-							<form id="requestQuote" >									
+							<form id="requestQuote" method="POST" action="/request_form">									
 								<div class="row ">									
 									<div id="form-selected" class="container_form col-md-7 pl-20">
 										
 										<h4 class="text-white">Choose your building type project:</h4>
-										<hr class="mt-5 mb-5" />
-										<div class="row">
+										<hr class="mt-5 mb-5" />										
+										<div class="row"  >
 												<div class="col-md-3" >
 													<label class="pt-5 pb-20 " for="AptCheckBox">Residential</label>
 													<input class="mt-12 ml-10" type="radio" id="AptCheckBox" name="optBox" value="AptOpt" onclick="myFunction()">
@@ -232,7 +232,7 @@
 													<label class="pt-5 pb-20" for="HybCheckBox">Hybrid</label>
 													<input class="mt-12 ml-10" type="radio" id="HybCheckBox"  name="optBox" value="HybOpt" onclick="myFunction()">
 												</div>												
-										</div>											
+										</div>												
 										<hr class="mt-5 mb-10" />
 										<h4 class="text-white">Indicate the number for each item : </h4>
 										<div>											
@@ -291,7 +291,7 @@
 										<div class="container_answer" >
 											<h4 class="text-white">RESULTS FOR :</h4>
 											<div id="buildingType_answer" class="center-text">
-												<p id="AptChoiceText" class="mb-10" style="Display:none"><strong><em>Apartement</em></strong></p>
+												<p id="AptChoiceText" class="mb-10" style="Display:none"><strong><em>Residential</em></strong></p>
 												<p id="ComChoiceText" class="mb-10" style="Display:none"><strong><em>Commercial</em></strong></p>
 												<p id="CorpChoiceText" class="mb-10" style="Display:none"><strong><em>Corporate</em></strong></p>
 												<p id="HybChoiceText" class="mb-10" style="Display:none"><strong><em>Hybrid</em></strong></p>
